@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <nav class="navbar">
+        <div class="logo">Student Portal</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="home" class="hero">
+        <h1>Welcome to Student Information Portal</h1>
+        <p>A simple responsive webpage developed using HTML5 and CSS3.</p>
+        <a href="#contact" class="btn">Register Now</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>This portal provides student information, course details, and registration facilities.</p>
+    </section>
+
+    <section id="students" class="section">
+        <h2>Student Information</h2>
+        <table>
+            <thead>
+                <tr><th>Roll No.</th><th>Name</th><th>Course</th><th>Year</th><th>Marks</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>101</td><td>Rahul Patil</td><td>Computer Engineering</td><td>Second</td><td>85%</td></tr>
+                <tr><td>102</td><td>Priya Sharma</td><td>IT Engineering</td><td>Second</td><td>91%</td></tr>
+                <tr><td>103</td><td>Amit Joshi</td><td>Mechanical Engineering</td><td>Third</td><td>78%</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Student Registration Form</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" placeholder="Enter phone number" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Select Course:</label>
+                <select id="course">
+                    <option value="">-- Select Course --</option>
+                    <option>Computer Engineering</option>
+                    <option>Information Technology</option>
+                    <option>Mechanical Engineering</option>
+                    <option>Civil Engineering</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" rows="4" placeholder="Enter your address"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+            <button type="reset" class="reset-btn">Reset</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Student Information Portal. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
